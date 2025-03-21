@@ -6,19 +6,15 @@ The application is running React for the frontend and NestJS for the backend.
 
 Clone the repo and run 'npm install' - this will install all the dependencies for the application to run.
 
-Open a new terminal and navigate to the backend folder
-run - 'npm start' - this will start the backend server to recieve api calls.
+Open a new terminal and navigate to the backend folder and run - 'npm start' - this will start the backend server to recieve api calls.
 
-Open a new terminal and navigate to the frontend folder
-run - 'npm start' - this will start the frontend client.
+Open a new terminal and navigate to the frontend folder and run - 'npm start' - this will start the frontend client.
 
 ## Running tests
 
-Frontend tests - navigate to frontend folder
-run 'npm test' - this will run the frontend tests. If prompted, to run all tests, type 'a'.
+Frontend tests - navigate to frontend folder and run 'npm test' - this will run the frontend tests. If prompted, to run all tests, type 'a'.
 
-Backend tests - navigate to backend folder
-run 'npm test' - this will run the backend tests.
+Backend tests - navigate to backend folder and run 'npm test' - this will run the backend tests.
 
 ## Migration explanation
 
