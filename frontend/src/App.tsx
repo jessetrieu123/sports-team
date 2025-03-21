@@ -52,16 +52,17 @@ function App() {
 
     if (!response.ok) {
       const error = await response.json();
-
-      error.message.forEach((message: string) => toast.error(message));
+      error.message.forEach((message: string) =>
+        toast.error(message.charAt(0).toUpperCase() + message.slice(1))
+      );
     } else {
       toast.success('A team has been created successfully.');
     }
   };
 
   return (
-    <div className='App h-lvh w-lvh content-center'>
-      <div className='flex flex-row h-[80%] justify-center gap-10'>
+    <div className='App h-lvh w-lvh content-center bg-[url(../images/field.jpg)] bg-cover'>
+      <div className='flex flex-row h-[80%] w-[50%] justify-between justify-self-center bg-white rounded p-4'>
         <div className='flex h-full overflow-auto'>
           <ul className='flex flex-col gap-2'>
             {dataPlayers.player.map((player) => {
@@ -69,9 +70,9 @@ function App() {
             })}
           </ul>
         </div>
-        <div className='flex flex-col'>
+        <div className='flex flex-1 flex-col self-center items-center'>
           <form
-            className='border-2 border-teal-50 rounded p-2'
+            className='border-2 border-teal-50 rounded p-2 w-[50%]'
             onSubmit={handleSubmit}>
             <h2 className='pb-2'>Team Creation</h2>
             <label className='flex'>Enter team name:</label>

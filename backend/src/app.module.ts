@@ -5,7 +5,12 @@ import { TeamsModule } from './api/teams/teams.module';
 import { CacheModule } from '@nestjs/cache-manager';
 
 @Module({
-  imports: [TeamsModule, CacheModule.register()],
+  imports: [
+    TeamsModule,
+    CacheModule.register({
+      isGlobal: true,
+    }),
+  ],
   controllers: [AppController],
   providers: [AppService],
 })
