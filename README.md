@@ -12,9 +12,9 @@ Open a new terminal and navigate to the frontend folder and run - 'npm start' = 
 
 ## Running tests
 
-Frontend tests - navigate to frontend folder and run 'npm test' - this will run the frontend tests
+Frontend tests - navigate to frontend folder and run 'npm test' - this will run the frontend tests. If prompted, to run all tests, type 'a'.
 
-Backend tests - navigate to backend folder and run 'npm test' - this will run the backend tests
+Backend tests - navigate to backend folder and run 'npm test' - this will run the backend tests.
 
 ## Migration explanation
 
